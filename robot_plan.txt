@@ -1,0 +1,30 @@
+#Things to consider:  Weekends, Day, and Night 
+#A standard minutely rate for weekdays, and an ‘extra’ rate for weekends.
+#When rates switches between day and night rates, for a total of four different rates
+# (weekday/weekend + day/night).
+# • For every eight hours, the robot needs to take an hour of unpaid break (or part thereof)
+# for planned system maintenance.
+
+
+# Calculation as 1 januaray is friday which is standard day hence the day hours are 2hours and 45 minutes = 165 minutes at a rate of 20 per minute
+# standard night rate was 25 which robot on friday worked for 1 hour --> 60 * 25
+# For extra day as 2nd januray is saturday, then robot works extra 4 hours 15 minutes = 255 minutes at a rate of 35 minutes
+
+# Logic create 4 variables .i.e. Weekday day, weekday night, weekend day, weekend night
+# create 4 variables to store rates for each days and night
+# have a check for more than 8 hours and for each 8 hours deduct 60 minutes
+
+
+
+
+# https://docs.python.org/3/library/calendar.html#module-calendar
+# calendar.weekday(year, month, day)
+
+#     Returns the day of the week (0 is Monday) for year (1970–…), month (1–12), day (1–31).
+
+
+
+# https://docs.python.org/3/library/datetime.html#module-datetime
+# date.weekday()¶
+
+#     Return the day of the week as an integer, where Monday is 0 and Sunday is 6. For example, date(2002, 12, 4).weekday() == 2, a Wednesday. See also isoweekday().
